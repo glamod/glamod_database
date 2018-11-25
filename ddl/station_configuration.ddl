@@ -30,5 +30,12 @@ CREATE TABLE cdm_v1.station_configuration (
   observed_variables INT[],
   comment VARCHAR,
   optional_data INT REFERENCES cdm_v1.data_present(flag),
+  bbox_min_longitude NUMERIC,
+  bbox_max_longitude NUMERIC,
+  bbox_min_latitude NUMERIC,
+  bbox_max_latitude NUMERIC,
+  metadata_contact VARCHAR[],
+  metadata_contact_role INT[],
+  location geography,
   PRIMARY KEY(primary_id, record_number)
 );
