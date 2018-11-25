@@ -27,9 +27,9 @@ CREATE SCHEMA cdm_v1;
 -- Set base path for scripts etc
 -- -------------------------------
 \set basedir `pwd`
-\set tabledefs '/pgdata/scripts/c3s311a/ddl/'
-\set functiondefs '/pgdata/scripts/c3s311a/functions/'
-\set datadir '/pgdata/scripts/c3s311a/code_tables/'
+\set tabledefs '/pgdata/scripts/glamd_database/ddl/'
+\set functiondefs '/pgdata/scripts/glamd_database/functions/'
+\set datadir '/pgdata/scripts/glamd_database/code_tables/'
 -- -------------------------------
 -- Create code tables
 -- -------------------------------
