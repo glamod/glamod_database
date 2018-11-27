@@ -9,13 +9,14 @@ inv_stations = {
     'marine': 1
 }
 
-inv_platforms = {}
+#inv_platforms = {}
 
-for key, value in platforms.items():
-    inv_platforms[value] = inv_platforms.get(value,[])
-    inv_platforms[value].append( key )
+#for key, value in platforms.items():
+#    inv_platforms[value] = inv_platforms.get(value,[])
+#    inv_platforms[value].append( key )
 
 outfile = open('create_header_children.sql', 'w')
+print('\connect c3s311a', file = outfile)
 # generate child tables for header
 for year in range( 1800, 2019, 1):
     tmin = '{}-01-01 00:00:0.0+0'.format(year)
@@ -34,7 +35,9 @@ for year in range( 1800, 2019, 1):
 outfile.close()
 
 outfile = open('create_header_triggers.sql', 'w')
+print('\connect c3s311a', file = outfile)
 outfile2 = open('validate_header_triggers.sql','w')
+print('\connect c3s311a', file = outfile2)
 
 # now insert trigger for header
 print( '' )
@@ -86,27 +89,28 @@ outfile2.close()
 # now repeat for observation tables
 
 outfile = open('create_observation_children.sql', 'w')
+print('\connect c3s311a', file = outfile)
 # generate child tables for header
 for year in range( 1800, 2019, 1):
     tmin = '{}-01-01 00:00:0.0+0'.format(year)
     tmax = '{}-01-01 00:00:0.0+0'.format(year + 1)
     for station, values in stations.items():
         for report in values['report']:
-            for platform in values['platform']:
-                table_name = 'cdm_v1.observations_{}_{}_{}'.format( year, station, report )
-                table_short = 'observations_{}_{}_{}'.format( year, station, report )
-                station_constraint = inv_stations[station]
-                print('')
-                print( 'create table {}() inherits ( cdm_v1.observations_table );'.format( table_name ), file = outfile )
-                print( 'alter table {} add constraint {}_pk primary key (observation_id);'.format( table_name, table_short ), file = outfile )
-                print( 'alter table {} add constraint {}_report check( report_type = {});'.format( table_name, table_short, report), file = outfile)
-                print( 'alter table {} add constraint {}_station check( station_type = {} );'.format(table_name, table_short, station_constraint) , file = outfile)
-                print( "alter table {} add constraint {}_date check(date_time >= TIMESTAMP WITH TIME ZONE '{}' and date_time < TIMESTAMP WITH TIME ZONE '{}' );".format(table_name, table_short, tmin, tmax ) , file = outfile)
+            table_name = 'cdm_v1.observations_{}_{}_{}'.format( year, station, report )
+            table_short = 'observations_{}_{}_{}'.format( year, station, report )
+            station_constraint = inv_stations[station]
+            print( 'create table {}() inherits ( cdm_v1.observations_table );'.format( table_name ), file = outfile )
+            print( 'alter table {} add constraint {}_pk primary key (observation_id);'.format( table_name, table_short ), file = outfile )
+            print( 'alter table {} add constraint {}_report check( report_type = {});'.format( table_name, table_short, report), file = outfile)
+            print( 'alter table {} add constraint {}_station check( station_type = {} );'.format(table_name, table_short, station_constraint) , file = outfile)
+            print( "alter table {} add constraint {}_date check(date_time >= TIMESTAMP WITH TIME ZONE '{}' and date_time < TIMESTAMP WITH TIME ZONE '{}' );".format(table_name, table_short, tmin, tmax ) , file = outfile)
 outfile.close()
 
 
 outfile = open('create_observations_triggers.sql', 'w')
+print('\connect c3s311a', file = outfile)
 outfile2 = open('validate_observation_triggers.sql','w')
+print('\connect c3s311a', file = outfile2)
 # now insert trigger for observations
 print( '' )
 print( 'CREATE OR REPLACE FUNCTION observations_insert_trigger()', file = outfile)
@@ -128,10 +132,10 @@ for year in range( 1800, 2019, 1):
             table_name = 'cdm_v1.observations_{}_{}_{}'.format( year, station, report )
             table_short = 'observations_{}_{}_{}'.format( year, station, report )
                
-           print('CREATE TRIGGER observations_table_insert_check_{}_{}_{} BEFORE INSERT ON'.format(year, station, report), file = outfile2)
-           print('    {}'.format( table_name ), file = outfile2)
-           print('FOR EACH ROW', file = outfile2)
-           print('    EXECUTE PROCEDURE cdm_v1.validate_observations_table();', file = outfile2)
+            print('CREATE TRIGGER observations_table_insert_check_{}_{}_{} BEFORE INSERT ON'.format(year, station, report), file = outfile2)
+            print('    {}'.format( table_name ), file = outfile2)
+            print('FOR EACH ROW', file = outfile2)
+            print('    EXECUTE PROCEDURE cdm_v1.validate_observations_table();', file = outfile2)
               
             if( counter2 == 0):
                 print('                IF NEW.report_type = {} THEN'.format(report) , file = outfile)
