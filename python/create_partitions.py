@@ -5,8 +5,8 @@ stations = {
 }
 
 inv_stations = {
-    'land': 0,
-    'marine': 1
+    'land': 1,
+    'marine': 2
 }
 
 #inv_platforms = {}
@@ -41,7 +41,7 @@ print('\connect c3s311a', file = outfile2)
 
 # now insert trigger for header
 print( '' )
-print( 'CREATE OR REPLACE FUNCTION header_insert_trigger()', file = outfile)
+print( 'CREATE OR REPLACE FUNCTION cdm_v1.header_insert_trigger()', file = outfile)
 print( '    RETURNS TRIGGER AS $$', file = outfile)
 print( '    BEGIN', file = outfile)
 for year in range( 1800, 2019, 1):
@@ -63,7 +63,7 @@ for year in range( 1800, 2019, 1):
             print('CREATE TRIGGER header_table_insert_check_{}_{}_{} BEFORE INSERT ON'.format(year, station, report), file = outfile2)
             print('    {}'.format( table_name ), file = outfile2)
             print('FOR EACH ROW', file = outfile2)
-            print('    EXECUTE PROCEDURE cdm_v1.validate_observations_table();', file = outfile2)
+            print('    EXECUTE PROCEDURE cdm_v1.validate_header_table();', file = outfile2)
             
             if( counter2 == 0):
                 print('                IF NEW.report_type = {} THEN'.format(report) , file = outfile)
@@ -80,15 +80,21 @@ for year in range( 1800, 2019, 1):
     print("                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';", file = outfile)
     print('            END IF;', file = outfile)
     print('        END IF;', file = outfile)
-
+print( '      RETURN NULL;', file = outfile)
 print( '    END', file = outfile)
 print( '$$', file = outfile)
 print( 'LANGUAGE plpgsql;', file = outfile)
 outfile.close()
 outfile2.close()
+outfile = open('header_add_trigger.sql','w')
+print('\connect c3s311a', file = outfile)
+print( 'CREATE TRIGGER header_insert_trigger', file = outfile)
+print( 'BEFORE INSERT ON cdm_v1.header_table', file = outfile)
+print( 'FOR EACH ROW EXECUTE PROCEDURE cdm_v1.header_insert_trigger();', file = outfile)
+outfile.close()
 # now repeat for observation tables
 
-outfile = open('create_observation_children.sql', 'w')
+outfile = open('create_observations_children.sql', 'w')
 print('\connect c3s311a', file = outfile)
 # generate child tables for header
 for year in range( 1800, 2019, 1):
@@ -113,7 +119,7 @@ outfile2 = open('validate_observation_triggers.sql','w')
 print('\connect c3s311a', file = outfile2)
 # now insert trigger for observations
 print( '' )
-print( 'CREATE OR REPLACE FUNCTION observations_insert_trigger()', file = outfile)
+print( 'CREATE OR REPLACE FUNCTION cdm_v1.observations_insert_trigger()', file = outfile)
 print( '    RETURNS TRIGGER AS $$', file = outfile)
 print( '    BEGIN', file = outfile)
 for year in range( 1800, 2019, 1):
@@ -152,9 +158,15 @@ for year in range( 1800, 2019, 1):
     print("                RAISE EXCEPTION 'Invalid station type in observations_insert_trigger';", file = outfile)
     print('            END IF;', file = outfile)
     print('        END IF;', file = outfile)
-
+print( '      RETURN NULL;', file = outfile)
 print( '    END', file = outfile)
 print( '$$', file = outfile)
 print( 'LANGUAGE plpgsql;', file = outfile)
 outfile.close()
 outfile2.close()
+outfile = open('observations_add_trigger.sql','w')
+print('\connect c3s311a', file = outfile)
+print( 'CREATE TRIGGER observations_insert_trigger', file = outfile)
+print( 'BEFORE INSERT ON cdm_v1.observations_table', file = outfile)
+print( 'FOR EACH ROW EXECUTE PROCEDURE cdm_v1.observations_insert_trigger();', file = outfile)
+outfile.close()

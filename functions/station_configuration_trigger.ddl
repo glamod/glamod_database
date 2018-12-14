@@ -11,6 +11,12 @@ END IF;
 IF NOT new.role <@ (select array_agg(role) from cdm_v1.role) THEN
   RAISE EXCEPTION ' Invalid entry for station_configuration.role, match not found in role.role ';
 END IF;
+IF NOT new.metadata_contact <@ (select array_agg(contact_id) from cdm_v1.contact) THEN
+  RAISE EXCEPTION ' Invalid entry for station_configuration.metadata_contact, match not found in contact.contact_id ';
+END IF;
+IF NOT new.metadata_contact_role <@ (select array_agg(role) from cdm_v1.role) THEN
+  RAISE EXCEPTION ' Invalid entry for station_configuration.metadata_contact_role, match not found in role.role ';
+END IF;
 IF NOT new.telecommunication_method <@ (select array_agg(method) from cdm_v1.communication_method) THEN
   RAISE EXCEPTION ' Invalid entry for station_configuration.telecommunication_method, match not found in communication_method.method ';
 END IF;

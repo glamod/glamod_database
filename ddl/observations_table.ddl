@@ -45,9 +45,9 @@ CREATE TABLE cdm_v1.observations_table (
   advanced_uncertainty INT REFERENCES cdm_v1.data_present(flag),
   advanced_homogenisation INT REFERENCES cdm_v1.data_present(flag),
   source_id VARCHAR REFERENCES cdm_v1.source_configuration( source_id ),
-  location geography,
   report_type INT REFERENCES cdm_v1.report_type(type),
   station_type INT REFERENCES cdm_v1.station_type(type),
+  location geography,
   PRIMARY KEY(observation_id),
   FOREIGN KEY( secondary_variable, secondary_value) REFERENCES cdm_v1.secondary_variable( variable, value),
   FOREIGN KEY( conversion_method, observed_variable) REFERENCES cdm_v1.conversion_method( method, variable )

@@ -29,7 +29,9 @@ CREATE SCHEMA cdm_v1;
 \set basedir `pwd`
 \set tabledefs '/pgdata/scripts/glamod_database/ddl/'
 \set functiondefs '/pgdata/scripts/glamod_database/functions/'
-\set datadir '/pgdata/scripts/glamod_database/code_tables/'
+\set codetables '/pgdata/scripts/glamod_database/code_tables/'
+\set datatables '/pgdata/scripts/glamod_database/data_tables/'
+
 -- -------------------------------
 -- Create code tables
 -- -------------------------------
@@ -128,11 +130,19 @@ CREATE SCHEMA cdm_v1;
 \i 'station_configuration_trigger.ddl'
 \i 'header_table_trigger.ddl'
 \i 'observations_table_trigger.ddl'
+\i 'create_header_children.sql'
+\i 'create_header_triggers.sql'
+\i 'create_observations_children.sql'
+\i 'create_observations_triggers.sql'
+\i 'header_add_trigger.sql'
+\i 'observations_add_trigger.sql'
+\i 'validate_header_triggers.sql'
+\i 'validate_observation_triggers.sql'
 -- ----------------------------------------------
 -- Now import initial tables
 -- NOTE: order is important!
 -- ----------------------------------------------
-\cd :datadir
+\cd :codetables
 \COPY cdm_v1.application_area FROM 'application_area.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.automation_status FROM 'automation_status.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.calibration_status FROM 'calibration_status.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
@@ -161,6 +171,7 @@ CREATE SCHEMA cdm_v1;
 \COPY cdm_v1.platform_sub_type FROM 'platform_sub_type.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.processing_level FROM 'processing_level.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.profile_type FROM 'profile_type.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
+\COPY cdm_v1.report_type FROM 'report_type.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.quality_flag FROM 'quality_flag.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.sampling_strategy FROM 'sampling_strategy.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.sea_level_datum FROM 'sea_level_datum.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
@@ -184,6 +195,13 @@ CREATE SCHEMA cdm_v1;
 \COPY cdm_v1.source_configuration_codes FROM 'source_configuration_codes.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.station_configuration_fields FROM 'station_configuration_fields.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.station_configuration_codes FROM 'station_configuration_codes.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
+
+-- Now import existing data tables
+\cd :datatables
+\COPY cdm_v1.conversion_method FROM 'conversion_method.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
+\COPY cdm_v1.organisation FROM 'organisation.dat' WITH CSV DELIMITER AS '|' NULL AS 'NA'
+\COPY cdm_v1.contact FROM 'contact.dat' WITH CSV DELIMITER AS '|' NULL AS 'NA'
+
 \cd :basedir
 -- ---------------------------------------
 -- End of script, database should now be
