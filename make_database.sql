@@ -186,7 +186,8 @@ CREATE SCHEMA cdm_v1;
 \COPY cdm_v1.update_frequency FROM 'update_frequency.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.z_coordinate_method FROM 'z_coordinate_method.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.z_coordinate_type FROM 'z_coordinate_type.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
-\COPY cdm_v1.units FROM 'units.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NULL'
+-- Ignore quote character when copying from units since double quote is used as a value
+\COPY cdm_v1.units FROM 'units.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NULL' QUOTE AS E'\b'
 \COPY cdm_v1.profile_configuration_fields FROM 'profile_configuration_fields.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.profile_configuration_codes FROM 'profile_configuration_codes.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
 \COPY cdm_v1.sensor_configuration_fields FROM 'sensor_configuration_fields.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
