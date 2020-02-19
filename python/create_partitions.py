@@ -16,7 +16,6 @@ inv_stations = {
 #    inv_platforms[value].append( key )
 
 outfile = open('create_header_children.sql', 'w')
-print('\connect c3s311a', file = outfile)
 # generate child tables for header
 for year in range( 1800, 2019, 1):
     tmin = '{}-01-01 00:00:0.0+0'.format(year)
@@ -35,9 +34,7 @@ for year in range( 1800, 2019, 1):
 outfile.close()
 
 outfile = open('create_header_triggers.sql', 'w')
-print('\connect c3s311a', file = outfile)
 outfile2 = open('validate_header_triggers.sql','w')
-print('\connect c3s311a', file = outfile2)
 
 # now insert trigger for header
 print( '' )
@@ -87,7 +84,6 @@ print( 'LANGUAGE plpgsql;', file = outfile)
 outfile.close()
 outfile2.close()
 outfile = open('header_add_trigger.sql','w')
-print('\connect c3s311a', file = outfile)
 print( 'CREATE TRIGGER header_insert_trigger', file = outfile)
 print( 'BEFORE INSERT ON header_table', file = outfile)
 print( 'FOR EACH ROW EXECUTE PROCEDURE header_insert_trigger();', file = outfile)
@@ -95,7 +91,6 @@ outfile.close()
 # now repeat for observation tables
 
 outfile = open('create_observations_children.sql', 'w')
-print('\connect c3s311a', file = outfile)
 # generate child tables for header
 for year in range( 1800, 2019, 1):
     tmin = '{}-01-01 00:00:0.0+0'.format(year)
@@ -114,9 +109,7 @@ outfile.close()
 
 
 outfile = open('create_observations_triggers.sql', 'w')
-print('\connect c3s311a', file = outfile)
 outfile2 = open('validate_observation_triggers.sql','w')
-print('\connect c3s311a', file = outfile2)
 # now insert trigger for observations
 print( '' )
 print( 'CREATE OR REPLACE FUNCTION observations_insert_trigger()', file = outfile)
@@ -165,7 +158,6 @@ print( 'LANGUAGE plpgsql;', file = outfile)
 outfile.close()
 outfile2.close()
 outfile = open('observations_add_trigger.sql','w')
-print('\connect c3s311a', file = outfile)
 print( 'CREATE TRIGGER observations_insert_trigger', file = outfile)
 print( 'BEFORE INSERT ON observations_table', file = outfile)
 print( 'FOR EACH ROW EXECUTE PROCEDURE observations_insert_trigger();', file = outfile)

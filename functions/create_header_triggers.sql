@@ -1,4 +1,3 @@
-\connect c3s311a
 CREATE OR REPLACE FUNCTION header_insert_trigger()
     RETURNS TRIGGER AS $$
     BEGIN

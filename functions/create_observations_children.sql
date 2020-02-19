@@ -1,4 +1,3 @@
-\connect c3s311a
 create table observations_1800_land_0() inherits ( observations_table );
 alter table observations_1800_land_0 add constraint observations_1800_land_0_pk primary key (observation_id);
 alter table observations_1800_land_0 add constraint observations_1800_land_0_report check( report_type = 0);

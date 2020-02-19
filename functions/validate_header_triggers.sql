@@ -1,4 +1,3 @@
-\connect c3s311a
 CREATE TRIGGER header_table_insert_check_1800_land_0 BEFORE INSERT ON
     header_1800_land_0
 FOR EACH ROW

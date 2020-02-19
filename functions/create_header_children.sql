@@ -1,4 +1,3 @@
-\connect c3s311a
 create table header_1800_land_0() inherits ( header_table );
 alter table header_1800_land_0 add constraint header_1800_land_0_pk primary key (report_id);
 alter table header_1800_land_0 add constraint header_1800_land_0_report check( report_type = 0);

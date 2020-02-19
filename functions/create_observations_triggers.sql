@@ -1,4 +1,3 @@
-\connect c3s311a
 CREATE OR REPLACE FUNCTION observations_insert_trigger()
     RETURNS TRIGGER AS $$
     BEGIN
