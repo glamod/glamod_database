@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.product_status (
+CREATE TABLE product_status (
   status INT,
   abbreviation VARCHAR,
   description VARCHAR,

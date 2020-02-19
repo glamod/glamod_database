@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.observing_programme (
+CREATE TABLE observing_programme (
   observing_programme INT,
   abbreviation VARCHAR,
   description VARCHAR,

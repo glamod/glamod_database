@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.role (
+CREATE TABLE role (
   role INT,
   entry VARCHAR,
   description VARCHAR,

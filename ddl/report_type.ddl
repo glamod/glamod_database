@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.report_type (
+CREATE TABLE report_type (
   type INT,
   abbreviation VARCHAR,
   description VARCHAR,

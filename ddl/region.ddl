@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.region (
+CREATE TABLE region (
   region INT,
   WMO_region INT,
   description VARCHAR,

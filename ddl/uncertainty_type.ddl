@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.uncertainty_type (
+CREATE TABLE uncertainty_type (
   uncertainty_type INT ,
   name VARCHAR,
   description VARCHAR,

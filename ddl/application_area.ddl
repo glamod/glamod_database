@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.application_area (
+CREATE TABLE application_area (
   application_area INT,
   description VARCHAR,
   PRIMARY KEY(application_area)

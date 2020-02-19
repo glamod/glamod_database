@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.qc_method (
+CREATE TABLE qc_method (
   method INT ,
   description VARCHAR,
   originator VARCHAR,

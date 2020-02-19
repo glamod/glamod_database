@@ -1,5 +1,5 @@
-CREATE TABLE cdm_v1.source_configuration_codes (
-  field_id VARCHAR  REFERENCES cdm_v1.source_configuration_fields(field_id),
+CREATE TABLE source_configuration_codes (
+  field_id VARCHAR  REFERENCES source_configuration_fields(field_id),
   field_name VARCHAR,
   code_value INT ,
   abbreviation VARCHAR,

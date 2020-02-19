@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.processing_code (
+CREATE TABLE processing_code (
   code INT ,
   abbreviation VARCHAR,
   description VARCHAR,

@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.sub_region (
+CREATE TABLE sub_region (
   sub_region INT,
   type VARCHAR,
   code VARCHAR,

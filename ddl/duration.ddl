@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.duration (
+CREATE TABLE duration (
   duration INT,
   description VARCHAR,
   period INT,

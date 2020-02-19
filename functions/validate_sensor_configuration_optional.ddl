@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION cdm_v1.validate_sensor_configuration_optional()
+CREATE OR REPLACE FUNCTION validate_sensor_configuration_optional()
     RETURNS trigger AS
     $BODY$
     DECLARE
@@ -18,7 +18,7 @@ CREATE OR REPLACE FUNCTION cdm_v1.validate_sensor_configuration_optional()
         ELSE
             RAISE EXCEPTION 'Invalid kind';
         END IF;
-        INSERT INTO cdm_v1.sensor_configuration_optional VALUES (NEW.*);
+        INSERT INTO sensor_configuration_optional VALUES (NEW.*);
         RETURN NEW;
     EXCEPTION
         WHEN invalid_text_representation THEN --
@@ -41,6 +41,6 @@ COST 100;
 
 
 CREATE TRIGGER validate_sensor_configuration_optional BEFORE INSERT ON
-    cdm_v1.sensor_configuration_optional
+    sensor_configuration_optional
 FOR EACH ROW
-    EXECUTE PROCEDURE cdm_v1.validate_sensor_configuration_optional();
+    EXECUTE PROCEDURE validate_sensor_configuration_optional();

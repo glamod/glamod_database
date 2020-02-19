@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.source_format (
+CREATE TABLE source_format (
   format INT,
   description VARCHAR,
   PRIMARY KEY(format)

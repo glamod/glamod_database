@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.units (
+CREATE TABLE units (
   units INT,
   name VARCHAR,
   abbreviation VARCHAR,

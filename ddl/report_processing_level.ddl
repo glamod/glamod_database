@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.report_processing_level (
+CREATE TABLE report_processing_level (
   level INT,
   abbreviation VARCHAR,
   description VARCHAR,

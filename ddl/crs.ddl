@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.crs (
+CREATE TABLE crs (
   crs INT,
   description VARCHAR,
   PRIMARY KEY(crs)

@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.processing_level (
+CREATE TABLE processing_level (
   level INT ,
   name VARCHAR,
   description VARCHAR,

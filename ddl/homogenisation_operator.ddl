@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.homogenisation_operator (
+CREATE TABLE homogenisation_operator (
   operator INT ,
   symbol VARCHAR,
   description VARCHAR,

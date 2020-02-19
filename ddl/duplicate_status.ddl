@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.duplicate_status (
+CREATE TABLE duplicate_status (
   status INT,
   description VARCHAR,
   PRIMARY KEY(status)

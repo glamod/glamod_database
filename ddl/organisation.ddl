@@ -1,13 +1,13 @@
-CREATE TABLE cdm_v1.organisation (
+CREATE TABLE organisation (
   organisation_id VARCHAR ,
-  parent_organisation VARCHAR REFERENCES cdm_v1.organisation(organisation_id),
+  parent_organisation VARCHAR REFERENCES organisation(organisation_id),
   name VARCHAR,
   abbreviation VARCHAR,
   address VARCHAR,
   city VARCHAR,
   admin_area VARCHAR,
-  region INT REFERENCES cdm_v1.region(region),
-  country INT REFERENCES cdm_v1.sub_region(sub_region),
+  region INT REFERENCES region(region),
+  country INT REFERENCES sub_region(sub_region),
   postal_code VARCHAR,
   telephone VARCHAR,
   url VARCHAR,

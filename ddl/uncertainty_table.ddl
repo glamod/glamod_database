@@ -1,7 +1,7 @@
-CREATE TABLE cdm_v1.uncertainty_table (
-  observation_id VARCHAR REFERENCES cdm_v1.observations_table(observation_id),
-  uncertainty_type INT REFERENCES cdm_v1.uncertainty_type( uncertainty_type ),
-  uncertainty_method INT REFERENCES cdm_v1.uncertainty_method(method),
+CREATE TABLE uncertainty_table (
+  observation_id VARCHAR REFERENCES observations_table(observation_id),
+  uncertainty_type INT REFERENCES uncertainty_type( uncertainty_type ),
+  uncertainty_method INT REFERENCES uncertainty_method(method),
   uncertainty_value NUMERIC,
-  uncertainty_units INT REFERENCES cdm_v1.units(units)
+  uncertainty_units INT REFERENCES units(units)
 );

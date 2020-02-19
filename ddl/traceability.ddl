@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.traceability (
+CREATE TABLE traceability (
   traceability INT,
   description VARCHAR,
   PRIMARY KEY(traceability)

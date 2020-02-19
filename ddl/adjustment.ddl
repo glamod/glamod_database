@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.adjustment (
+CREATE TABLE adjustment (
   adjustment_id VARCHAR ,
   observation_id VARCHAR,
   value NUMERIC,

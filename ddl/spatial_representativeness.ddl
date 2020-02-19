@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.spatial_representativeness (
+CREATE TABLE spatial_representativeness (
   representativeness INT ,
   description VARCHAR,
   PRIMARY KEY(representativeness)

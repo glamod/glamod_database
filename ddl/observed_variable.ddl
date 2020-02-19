@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.observed_variable (
+CREATE TABLE observed_variable (
   variable INT,
   parameter_group VARCHAR,
   domain VARCHAR,

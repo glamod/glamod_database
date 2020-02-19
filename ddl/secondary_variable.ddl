@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.secondary_variable (
+CREATE TABLE secondary_variable (
   variable INT,
   variable_name VARCHAR,
   value INT,

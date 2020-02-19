@@ -1,6 +1,6 @@
-CREATE TABLE cdm_v1.conversion_method (
+CREATE TABLE conversion_method (
   method INT,
-  variable INT REFERENCES cdm_v1.observed_variable(variable),
+  variable INT REFERENCES observed_variable(variable),
   description VARCHAR,
   implementation VARCHAR,
   reference VARCHAR,

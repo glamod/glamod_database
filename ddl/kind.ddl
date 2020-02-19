@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.kind (
+CREATE TABLE kind (
   kind INT,
   description VARCHAR,
   PRIMARY KEY(kind)
