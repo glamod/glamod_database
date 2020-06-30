@@ -21,7 +21,7 @@ $BODY$
 LANGUAGE plpgsql VOLATILE
 COST 100;
 
-CREATE TRIGGER __INSERT_SCHEMA__.observations_table_insert_check BEFORE INSERT ON
+CREATE TRIGGER observations_table_insert_check BEFORE INSERT ON
   __INSERT_SCHEMA__.observations_table
 FOR EACH ROW
   EXECUTE PROCEDURE __INSERT_SCHEMA__.validate_observations_table();

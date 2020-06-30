@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION validate_header_table()
+CREATE OR REPLACE FUNCTION  __INSERT_SCHEMA__.validate_header_table()
 RETURNS trigger AS 
 $BODY$
 BEGIN
@@ -21,6 +21,6 @@ LANGUAGE plpgsql VOLATILE
 COST 100;
 
 -- CREATE TRIGGER header_table_insert_check BEFORE INSERT ON
---  header_table
+--  __INSERT_SCHEMA__.header_table
 --FOR EACH ROW
---  EXECUTE PROCEDURE validate_header_table();
+--  EXECUTE PROCEDURE  __INSERT_SCHEMA__.validate_header_table();
