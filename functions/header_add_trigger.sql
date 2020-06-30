@@ -1,3 +1,3 @@
 CREATE TRIGGER header_insert_trigger
-BEFORE INSERT ON full_r1.header_table
+BEFORE INSERT ON __INSERT_SCHEMA__.header_table
 FOR EACH ROW EXECUTE PROCEDURE header_insert_trigger();
