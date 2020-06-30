@@ -1,4 +1,4 @@
-CREATE TABLE source_configuration_codes (
+CREATE TABLE __INSERT_SCHEMA__.source_configuration_codes (
   field_id VARCHAR  REFERENCES source_configuration_fields(field_id),
   field_name VARCHAR,
   code_value INT ,

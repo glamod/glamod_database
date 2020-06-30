@@ -1,4 +1,4 @@
-CREATE TABLE header_table (
+CREATE TABLE __INSERT_SCHEMA__.header_table (
   report_id VARCHAR ,
   region INT REFERENCES region(region),
   sub_region INT REFERENCES sub_region(sub_region),

@@ -1,4 +1,4 @@
-CREATE TABLE processing_level (
+CREATE TABLE __INSERT_SCHEMA__.processing_level (
   level INT ,
   name VARCHAR,
   description VARCHAR,

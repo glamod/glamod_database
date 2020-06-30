@@ -1,4 +1,4 @@
-CREATE TABLE observed_variable (
+CREATE TABLE __INSERT_SCHEMA__.observed_variable (
   variable INT,
   parameter_group VARCHAR,
   domain VARCHAR,

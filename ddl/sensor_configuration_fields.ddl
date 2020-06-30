@@ -1,4 +1,4 @@
-CREATE TABLE sensor_configuration_fields (
+CREATE TABLE __INSERT_SCHEMA__.sensor_configuration_fields (
   field_id VARCHAR ,
   field_name VARCHAR,
   parameter VARCHAR,

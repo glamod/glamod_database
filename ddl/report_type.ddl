@@ -1,4 +1,4 @@
-CREATE TABLE report_type (
+CREATE TABLE __INSERT_SCHEMA__.report_type (
   type INT,
   abbreviation VARCHAR,
   description VARCHAR,

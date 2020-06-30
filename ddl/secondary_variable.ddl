@@ -1,4 +1,4 @@
-CREATE TABLE secondary_variable (
+CREATE TABLE __INSERT_SCHEMA__.secondary_variable (
   variable INT,
   variable_name VARCHAR,
   value INT,

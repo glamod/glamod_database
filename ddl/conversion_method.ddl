@@ -1,4 +1,4 @@
-CREATE TABLE conversion_method (
+CREATE TABLE __INSERT_SCHEMA__.conversion_method (
   method INT,
   variable INT REFERENCES observed_variable(variable),
   description VARCHAR,

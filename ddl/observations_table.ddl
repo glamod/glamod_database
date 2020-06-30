@@ -1,4 +1,4 @@
-CREATE TABLE observations_table (
+CREATE TABLE __INSERT_SCHEMA__.observations_table (
   observation_id VARCHAR ,
   report_id VARCHAR REFERENCES header_table(report_id),
   data_policy_licence INT REFERENCES data_policy_licence(policy),

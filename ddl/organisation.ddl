@@ -1,4 +1,4 @@
-CREATE TABLE organisation (
+CREATE TABLE __INSERT_SCHEMA__.organisation (
   organisation_id VARCHAR ,
   parent_organisation VARCHAR REFERENCES organisation(organisation_id),
   name VARCHAR,

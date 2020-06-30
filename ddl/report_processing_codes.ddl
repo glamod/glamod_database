@@ -1,4 +1,4 @@
-CREATE TABLE report_processing_codes (
+CREATE TABLE __INSERT_SCHEMA__.report_processing_codes (
   code INT ,
   abbreviation VARCHAR,
   description VARCHAR,

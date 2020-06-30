@@ -1,4 +1,4 @@
-CREATE TABLE station_configuration_optional (
+CREATE TABLE __INSERT_SCHEMA__.station_configuration_optional (
   station_primary_id VARCHAR,
   record_number INT,
   kind INT REFERENCES kind(kind),

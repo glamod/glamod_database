@@ -1,4 +1,4 @@
-CREATE TABLE observing_programme (
+CREATE TABLE __INSERT_SCHEMA__.observing_programme (
   observing_programme INT,
   abbreviation VARCHAR,
   description VARCHAR,

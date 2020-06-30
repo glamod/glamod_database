@@ -1,4 +1,4 @@
-CREATE TABLE source_configuration (
+CREATE TABLE __INSERT_SCHEMA__.source_configuration (
   source_id VARCHAR  ,
   product_id VARCHAR,
   product_name VARCHAR,

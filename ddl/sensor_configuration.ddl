@@ -1,4 +1,4 @@
-CREATE TABLE sensor_configuration (
+CREATE TABLE __INSERT_SCHEMA__.sensor_configuration (
   sensor_id VARCHAR ,
   observing_method INT REFERENCES observing_method(method),
   sampling_strategy INT REFERENCES sampling_strategy(strategy),

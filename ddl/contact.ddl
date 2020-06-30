@@ -1,4 +1,4 @@
-CREATE TABLE contact (
+CREATE TABLE __INSERT_SCHEMA__.contact (
   contact_id VARCHAR ,
   title VARCHAR,
   name VARCHAR,

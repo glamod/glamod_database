@@ -1,4 +1,4 @@
-CREATE TABLE qc_method (
+CREATE TABLE __INSERT_SCHEMA__.qc_method (
   method INT ,
   description VARCHAR,
   originator VARCHAR,

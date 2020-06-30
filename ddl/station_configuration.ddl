@@ -1,4 +1,4 @@
-CREATE TABLE station_configuration (
+CREATE TABLE __INSERT_SCHEMA__.station_configuration (
   primary_id VARCHAR ,
   primary_id_scheme INT REFERENCES id_scheme(scheme),
   record_number INT ,

@@ -1,4 +1,4 @@
-CREATE TABLE processing_code (
+CREATE TABLE __INSERT_SCHEMA__.processing_code (
   code INT ,
   abbreviation VARCHAR,
   description VARCHAR,

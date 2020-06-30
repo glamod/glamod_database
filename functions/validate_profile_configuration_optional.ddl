@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION validate_profile_configuration_optional()
+CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.validate_profile_configuration_optional()
     RETURNS trigger AS
     $BODY$
     DECLARE
@@ -18,7 +18,7 @@ CREATE OR REPLACE FUNCTION validate_profile_configuration_optional()
         ELSE
             RAISE EXCEPTION 'Invalid kind';
         END IF;
-        INSERT INTO profile_configuration_optional VALUES (NEW.*);
+        INSERT INTO __INSERT_SCHEMA__.profile_configuration_optional VALUES (NEW.*);
         RETURN NEW;
     EXCEPTION
         WHEN invalid_text_representation THEN --
@@ -40,7 +40,7 @@ LANGUAGE plpgsql VOLATILE
 COST 100;
 
 
-CREATE TRIGGER validate_profile_configuration_optional BEFORE INSERT ON
-    profile_configuration_optional
+CREATE TRIGGER __INSERT_SCHEMA__.validate_profile_configuration_optional BEFORE INSERT ON
+    __INSERT_SCHEMA__.profile_configuration_optional
 FOR EACH ROW
-    EXECUTE PROCEDURE validate_profile_configuration_optional();
+    EXECUTE PROCEDURE __INSERT_SCHEMA__.validate_profile_configuration_optional();

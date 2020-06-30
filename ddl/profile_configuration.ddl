@@ -1,4 +1,4 @@
-CREATE TABLE profile_configuration (
+CREATE TABLE __INSERT_SCHEMA__.profile_configuration (
   profile_id VARCHAR ,
   profile_type INT REFERENCES profile_type(type),
   standard_time INT REFERENCES standard_time(time),

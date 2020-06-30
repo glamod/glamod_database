@@ -1,4 +1,4 @@
-CREATE TABLE units (
+CREATE TABLE __INSERT_SCHEMA__.units (
   units INT,
   name VARCHAR,
   abbreviation VARCHAR,
