@@ -126,7 +126,7 @@ for year in all_years:
             table_name = '{}.observations_{}_{}_{}'.format( schema, year, station, report )
             table_short = 'observations_{}_{}_{}'.format( year, station, report )
             station_constraint = inv_stations[station]
-            print( 'create table {}() inherits ( {}.observations_table );'.format( schema, table_name ), file = outfile )
+            print( 'create table {}() inherits ( {}.observations_table );'.format( table_name, schema ), file = outfile )
             print( 'alter table {} add constraint {}_pk primary key (observation_id);'.format( table_name, table_short ), file = outfile )
             print( 'alter table {} add constraint {}_report check( report_type = {});'.format( table_name, table_short, report), file = outfile)
             print( 'alter table {} add constraint {}_station check( station_type = {} );'.format(table_name, table_short, station_constraint) , file = outfile)
