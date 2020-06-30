@@ -163,7 +163,7 @@ for year in all_years:
             print('CREATE TRIGGER observations_table_insert_check_{}_{}_{} BEFORE INSERT ON'.format(year, station, report), file = outfile2)
             print('    {}'.format( table_name ), file = outfile2)
             print('FOR EACH ROW', file = outfile2)
-            print('    EXECUTE PROCEDURE validate_observations_table();', file = outfile2)
+            print('    EXECUTE PROCEDURE {}.validate_observations_table();'.format( schema ), file = outfile2)
               
             if( counter2 == 0):
                 print('                IF NEW.report_type = {} THEN'.format(report) , file = outfile)
