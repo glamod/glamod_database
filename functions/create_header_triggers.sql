@@ -5,10 +5,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1761_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1761_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1761_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1761_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -20,10 +20,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1762_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1762_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1762_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1762_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -35,10 +35,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1763_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1763_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1763_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1763_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -50,10 +50,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1764_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1764_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1764_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1764_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -65,10 +65,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1765_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1765_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1765_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1765_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -80,10 +80,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1766_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1766_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1766_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1766_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -95,10 +95,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1767_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1767_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1767_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1767_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -110,10 +110,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1768_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1768_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1768_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1768_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -125,10 +125,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1769_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1769_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1769_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1769_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -140,10 +140,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1770_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1770_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1770_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1770_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -155,10 +155,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1771_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1771_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1771_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1771_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -170,10 +170,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1772_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1772_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1772_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1772_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -185,10 +185,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1773_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1773_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1773_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1773_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -200,10 +200,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1774_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1774_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1774_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1774_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -215,10 +215,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1775_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1775_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1775_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1775_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -230,10 +230,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1776_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1776_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1776_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1776_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -245,10 +245,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1777_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1777_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1777_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1777_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -260,10 +260,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1778_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1778_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1778_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1778_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -275,10 +275,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1779_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1779_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1779_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1779_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -290,10 +290,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1780_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1780_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1780_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1780_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -305,10 +305,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1781_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1781_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1781_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1781_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -320,10 +320,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1782_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1782_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1782_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1782_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -335,10 +335,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1783_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1783_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1783_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1783_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -350,10 +350,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1784_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1784_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1784_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1784_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -365,10 +365,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1785_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1785_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1785_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1785_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -380,10 +380,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1786_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1786_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1786_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1786_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -395,10 +395,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1787_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1787_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1787_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1787_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -410,10 +410,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1788_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1788_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1788_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1788_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -425,10 +425,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1789_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1789_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1789_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1789_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -440,10 +440,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1790_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1790_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1790_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1790_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -455,10 +455,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1791_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1791_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1791_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1791_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -470,10 +470,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1792_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1792_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1792_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1792_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -485,10 +485,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1793_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1793_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1793_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1793_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -500,10 +500,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1794_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1794_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1794_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1794_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -515,10 +515,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1795_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1795_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1795_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1795_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -530,10 +530,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1796_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1796_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1796_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1796_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -545,10 +545,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1797_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1797_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1797_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1797_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -560,10 +560,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1798_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1798_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1798_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1798_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -575,10 +575,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1799_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1799_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1799_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1799_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -590,10 +590,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1800_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1800_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1800_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1800_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -605,10 +605,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1801_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1801_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1801_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1801_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -620,10 +620,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1802_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1802_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1802_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1802_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -635,10 +635,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1803_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1803_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1803_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1803_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -650,10 +650,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1804_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1804_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1804_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1804_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -665,10 +665,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1805_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1805_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1805_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1805_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -680,10 +680,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1806_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1806_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1806_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1806_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -695,10 +695,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1807_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1807_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1807_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1807_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -710,10 +710,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1808_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1808_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1808_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1808_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -725,10 +725,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1809_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1809_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1809_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1809_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -740,10 +740,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1810_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1810_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1810_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1810_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -755,10 +755,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1811_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1811_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1811_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1811_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -770,10 +770,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1812_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1812_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1812_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1812_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -785,10 +785,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1813_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1813_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1813_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1813_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -800,10 +800,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1814_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1814_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1814_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1814_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -815,10 +815,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1815_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1815_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1815_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1815_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -830,10 +830,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1816_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1816_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1816_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1816_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -845,10 +845,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1817_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1817_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1817_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1817_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -860,10 +860,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1818_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1818_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1818_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1818_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -875,10 +875,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1819_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1819_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1819_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1819_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -890,10 +890,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1820_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1820_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1820_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1820_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -905,10 +905,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1821_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1821_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1821_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1821_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -920,10 +920,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1822_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1822_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1822_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1822_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -935,10 +935,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1823_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1823_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1823_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1823_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -950,10 +950,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1824_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1824_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1824_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1824_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -965,10 +965,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1825_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1825_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1825_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1825_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -980,10 +980,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1826_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1826_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1826_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1826_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -995,10 +995,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1827_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1827_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1827_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1827_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1010,10 +1010,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1828_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1828_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1828_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1828_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1025,10 +1025,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1829_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1829_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1829_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1829_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1040,10 +1040,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1830_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1830_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1830_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1830_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1055,10 +1055,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1831_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1831_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1831_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1831_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1070,10 +1070,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1832_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1832_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1832_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1832_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1085,10 +1085,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1833_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1833_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1833_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1833_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1100,10 +1100,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1834_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1834_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1834_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1834_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1115,10 +1115,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1835_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1835_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1835_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1835_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1130,10 +1130,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1836_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1836_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1836_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1836_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1145,10 +1145,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1837_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1837_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1837_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1837_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1160,10 +1160,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1838_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1838_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1838_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1838_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1175,10 +1175,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1839_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1839_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1839_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1839_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1190,10 +1190,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1840_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1840_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1840_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1840_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1205,10 +1205,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1841_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1841_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1841_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1841_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1220,10 +1220,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1842_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1842_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1842_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1842_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1235,10 +1235,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1843_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1843_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1843_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1843_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1250,10 +1250,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1844_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1844_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1844_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1844_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1265,10 +1265,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1845_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1845_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1845_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1845_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1280,10 +1280,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1846_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1846_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1846_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1846_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1295,10 +1295,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1847_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1847_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1847_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1847_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1310,10 +1310,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1848_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1848_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1848_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1848_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1325,10 +1325,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1849_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1849_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1849_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1849_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1340,10 +1340,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1850_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1850_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1850_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1850_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1355,10 +1355,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1851_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1851_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1851_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1851_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1370,10 +1370,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1852_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1852_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1852_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1852_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1385,10 +1385,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1853_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1853_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1853_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1853_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1400,10 +1400,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1854_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1854_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1854_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1854_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1415,10 +1415,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1855_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1855_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1855_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1855_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1430,10 +1430,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1856_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1856_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1856_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1856_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1445,10 +1445,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1857_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1857_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1857_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1857_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1460,10 +1460,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1858_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1858_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1858_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1858_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1475,10 +1475,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1859_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1859_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1859_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1859_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1490,10 +1490,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1860_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1860_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1860_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1860_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1505,10 +1505,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1861_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1861_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1861_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1861_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1520,10 +1520,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1862_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1862_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1862_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1862_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1535,10 +1535,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1863_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1863_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1863_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1863_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1550,10 +1550,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1864_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1864_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1864_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1864_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1565,10 +1565,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1865_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1865_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1865_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1865_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1580,10 +1580,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1866_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1866_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1866_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1866_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1595,10 +1595,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1867_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1867_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1867_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1867_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1610,10 +1610,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1868_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1868_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1868_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1868_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1625,10 +1625,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1869_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1869_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1869_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1869_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1640,10 +1640,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1870_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1870_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1870_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1870_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1655,10 +1655,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1871_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1871_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1871_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1871_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1670,10 +1670,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1872_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1872_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1872_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1872_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1685,10 +1685,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1873_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1873_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1873_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1873_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1700,10 +1700,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1874_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1874_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1874_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1874_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1715,10 +1715,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1875_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1875_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1875_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1875_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1730,10 +1730,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1876_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1876_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1876_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1876_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1745,10 +1745,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1877_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1877_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1877_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1877_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1760,10 +1760,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1878_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1878_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1878_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1878_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1775,10 +1775,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1879_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1879_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1879_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1879_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1790,10 +1790,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1880_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1880_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1880_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1880_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1805,10 +1805,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1881_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1881_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1881_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1881_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1820,10 +1820,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1882_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1882_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1882_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1882_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1835,10 +1835,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1883_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1883_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1883_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1883_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1850,10 +1850,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1884_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1884_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1884_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1884_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1865,10 +1865,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1885_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1885_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1885_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1885_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1880,10 +1880,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1886_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1886_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1886_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1886_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1895,10 +1895,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1887_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1887_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1887_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1887_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1910,10 +1910,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1888_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1888_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1888_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1888_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1925,10 +1925,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1889_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1889_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1889_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1889_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1940,10 +1940,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1890_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1890_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1890_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1890_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1955,10 +1955,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1891_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1891_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1891_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1891_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1970,10 +1970,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1892_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1892_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1892_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1892_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -1985,10 +1985,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1893_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1893_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1893_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1893_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2000,10 +2000,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1894_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1894_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1894_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1894_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2015,10 +2015,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1895_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1895_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1895_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1895_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2030,10 +2030,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1896_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1896_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1896_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1896_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2045,10 +2045,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1897_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1897_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1897_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1897_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2060,10 +2060,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1898_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1898_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1898_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1898_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2075,10 +2075,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1899_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1899_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1899_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1899_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2090,10 +2090,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1900_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1900_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1900_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1900_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2105,10 +2105,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1901_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1901_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1901_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1901_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2120,10 +2120,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1902_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1902_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1902_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1902_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2135,10 +2135,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1903_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1903_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1903_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1903_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2150,10 +2150,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1904_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1904_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1904_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1904_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2165,10 +2165,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1905_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1905_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1905_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1905_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2180,10 +2180,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1906_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1906_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1906_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1906_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2195,10 +2195,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1907_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1907_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1907_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1907_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2210,10 +2210,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1908_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1908_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1908_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1908_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2225,10 +2225,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1909_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1909_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1909_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1909_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2240,10 +2240,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1910_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1910_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1910_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1910_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2255,10 +2255,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1911_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1911_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1911_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1911_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2270,10 +2270,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1912_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1912_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1912_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1912_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2285,10 +2285,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1913_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1913_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1913_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1913_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2300,10 +2300,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1914_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1914_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1914_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1914_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2315,10 +2315,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1915_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1915_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1915_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1915_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2330,10 +2330,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1916_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1916_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1916_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1916_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2345,10 +2345,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1917_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1917_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1917_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1917_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2360,10 +2360,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1918_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1918_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1918_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1918_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2375,10 +2375,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1919_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1919_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1919_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1919_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2390,10 +2390,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1920_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1920_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1920_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1920_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2405,10 +2405,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1921_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1921_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1921_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1921_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2420,10 +2420,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1922_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1922_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1922_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1922_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2435,10 +2435,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1923_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1923_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1923_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1923_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2450,10 +2450,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1924_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1924_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1924_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1924_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2465,10 +2465,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1925_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1925_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1925_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1925_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2480,10 +2480,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1926_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1926_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1926_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1926_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2495,10 +2495,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1927_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1927_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1927_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1927_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2510,10 +2510,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1928_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1928_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1928_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1928_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2525,10 +2525,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1929_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1929_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1929_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1929_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2540,10 +2540,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1930_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1930_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1930_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1930_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2555,10 +2555,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1931_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1931_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1931_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1931_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2570,10 +2570,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1932_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1932_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1932_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1932_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2585,10 +2585,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1933_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1933_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1933_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1933_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2600,10 +2600,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1934_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1934_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1934_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1934_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2615,10 +2615,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1935_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1935_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1935_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1935_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2630,10 +2630,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1936_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1936_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1936_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1936_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2645,10 +2645,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1937_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1937_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1937_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1937_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2660,10 +2660,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1938_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1938_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1938_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1938_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2675,10 +2675,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1939_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1939_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1939_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1939_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2690,10 +2690,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1940_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1940_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1940_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1940_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2705,10 +2705,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1941_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1941_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1941_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1941_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2720,10 +2720,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1942_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1942_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1942_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1942_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2735,10 +2735,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1943_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1943_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1943_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1943_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2750,10 +2750,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1944_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1944_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1944_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1944_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2765,10 +2765,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1945_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1945_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1945_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1945_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2780,10 +2780,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1946_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1946_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1946_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1946_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2801,10 +2801,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1947_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1947_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1947_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1947_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2822,10 +2822,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1948_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1948_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1948_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1948_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2843,10 +2843,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1949_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1949_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1949_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1949_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2864,10 +2864,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1950_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1950_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1950_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1950_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2885,10 +2885,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1951_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1951_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1951_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1951_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2906,10 +2906,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1952_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1952_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1952_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1952_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2927,10 +2927,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1953_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1953_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1953_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1953_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2948,10 +2948,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1954_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1954_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1954_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1954_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2969,10 +2969,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1955_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1955_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1955_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1955_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -2990,10 +2990,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1956_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1956_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1956_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1956_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3011,10 +3011,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1957_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1957_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1957_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1957_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3032,10 +3032,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1958_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1958_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1958_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1958_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3053,10 +3053,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1959_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1959_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1959_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1959_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3074,10 +3074,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1960_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1960_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1960_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1960_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3095,10 +3095,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1961_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1961_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1961_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1961_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3116,10 +3116,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1962_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1962_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1962_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1962_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3137,10 +3137,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1963_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1963_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1963_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1963_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3158,10 +3158,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1964_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1964_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1964_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1964_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3179,10 +3179,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1965_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1965_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1965_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1965_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3200,10 +3200,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1966_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1966_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1966_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1966_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3221,10 +3221,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1967_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1967_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1967_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1967_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3242,10 +3242,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1968_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1968_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1968_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1968_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3263,10 +3263,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1969_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1969_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1969_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1969_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3284,10 +3284,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1970_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1970_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1970_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1970_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3305,10 +3305,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1971_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1971_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1971_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1971_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3326,10 +3326,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1972_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1972_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1972_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1972_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3347,10 +3347,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1973_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1973_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1973_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1973_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3368,10 +3368,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1974_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1974_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1974_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1974_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3389,10 +3389,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1975_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1975_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1975_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1975_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3410,10 +3410,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1976_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1976_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1976_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1976_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3431,10 +3431,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1977_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1977_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1977_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1977_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3452,10 +3452,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1978_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1978_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1978_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1978_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3473,10 +3473,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1979_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1979_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1979_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1979_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3494,10 +3494,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1980_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1980_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1980_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1980_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3515,10 +3515,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1981_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1981_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1981_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1981_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3536,10 +3536,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1982_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1982_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1982_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1982_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3557,10 +3557,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1983_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1983_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1983_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1983_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3578,10 +3578,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1984_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1984_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1984_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1984_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3599,10 +3599,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1985_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1985_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1985_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1985_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3620,10 +3620,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1986_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1986_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1986_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1986_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3641,10 +3641,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1987_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1987_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1987_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1987_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3662,10 +3662,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1988_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1988_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1988_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1988_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3683,10 +3683,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1989_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1989_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1989_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1989_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3704,10 +3704,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1990_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1990_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1990_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1990_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3725,10 +3725,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1991_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1991_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1991_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1991_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3746,10 +3746,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1992_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1992_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1992_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1992_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3767,10 +3767,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1993_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1993_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1993_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1993_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3788,10 +3788,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1994_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1994_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1994_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1994_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3809,10 +3809,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1995_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1995_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1995_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1995_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3830,10 +3830,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1996_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1996_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1996_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1996_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3851,10 +3851,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1997_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1997_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1997_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1997_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3872,10 +3872,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1998_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1998_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1998_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1998_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3893,10 +3893,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1999_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_1999_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_1999_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1999_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3914,10 +3914,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2000_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2000_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2000_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2000_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3935,10 +3935,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2001_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2001_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2001_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2001_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3956,10 +3956,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2002_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2002_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2002_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2002_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3977,10 +3977,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2003_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2003_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2003_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2003_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -3998,10 +3998,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2004_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2004_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2004_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2004_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4019,10 +4019,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2005_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2005_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2005_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2005_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4040,10 +4040,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2006_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2006_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2006_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2006_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4061,10 +4061,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2007_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2007_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2007_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2007_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4082,10 +4082,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2008_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2008_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2008_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2008_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4103,10 +4103,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2009_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2009_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2009_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2009_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4124,10 +4124,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2010_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2010_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2010_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2010_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4145,10 +4145,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2011_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2011_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2011_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2011_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4166,10 +4166,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2012_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2012_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2012_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2012_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4187,10 +4187,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2013_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2013_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2013_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2013_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4208,10 +4208,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2014_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2014_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2014_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2014_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4229,10 +4229,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2015_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2015_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2015_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2015_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4250,10 +4250,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2016_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2016_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2016_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2016_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4271,10 +4271,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2017_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2017_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2017_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2017_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4292,10 +4292,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2018_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2018_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2018_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2018_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4313,10 +4313,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2019_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2019_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2019_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2019_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;
@@ -4334,10 +4334,10 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2020_land_0 VALUES(NEW.*);
-                ELSIF NEW.report_type = 1 THEN
-                    INSERT INTO __INSERT_SCHEMA__.header_2020_land_1 VALUES(NEW.*);
                 ELSIF NEW.report_type = 2 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2020_land_2 VALUES(NEW.*);
+                ELSIF NEW.report_type = 3 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2020_land_3 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;

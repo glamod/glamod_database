@@ -28,8 +28,8 @@ for table_type in ('observations', 'header'):
     
         for report in values['report']:
         
-           table_name = '{}.{}_table_{}_{}_{}'.format( schema, table_type, year, station, report )
-           table_short = '{}_table_{}_{}_{}'.format( table_type, year, station, report )
+           table_name = '{}.{}_{}_{}_{}'.format( schema, table_type, year, station, report )
+           table_short = '{}_{}_{}_{}'.format( table_type, year, station, report )
            
            for idx_field in index_fields: 
                print('CREATE INDEX {}_{}_idx ON {} ({});'.format(table_short, idx_field, table_name, idx_field), file=outfile) 

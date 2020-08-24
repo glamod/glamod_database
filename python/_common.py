@@ -4,7 +4,7 @@ import datetime
 current_year = datetime.datetime.now().year
 
 stations = {
-    'land': {'report': {0,1,2}, 'platform': {'0'} },
+    'land': {'report': {0, 2, 3}, 'platform': {'0'} },
     'marine': {'report': {0}, 'platform': {'ship','drifting_buoy','moored_buoy','coastal','other'} ,
                'platform_constraints': {} }
 }
