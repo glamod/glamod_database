@@ -1,28 +1,10 @@
 #!/usr/bin/env python
 
-schema = "__INSERT_SCHEMA__"
+import sys
+sys.path.append('.')
 
-import datetime
-current_year = datetime.datetime.now().year
+from _common import *
 
-stations = {
-    'land': {'report': {0,1,2}, 'platform': {'0'} },
-    'marine': {'report': {0}, 'platform': {'ship','drifting_buoy','moored_buoy','coastal','other'} ,
-               'platform_constraints': {} }
-}
-
-inv_stations = {
-    'land': 1,
-    'marine': 2
-}
-
-year_ranges = {
-    "land": range(1761, current_year + 1),
-    "marine": range(1946, current_year + 1)
-} 
-
-all_years = range(1761, current_year + 1)
-#all_years = [1900]
 
 outfile = open('create_header_children.sql', 'w')
 
