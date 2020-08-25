@@ -1,7 +1,7 @@
 CREATE TABLE __INSERT_SCHEMA__.station_configuration (
-  primary_id VARCHAR ,
-  primary_id_scheme INT REFERENCES __INSERT_SCHEMA__.id_scheme(scheme),
-  record_number INT ,
+  primary_id VARCHAR,
+  primary_id_scheme INT NOT NULL REFERENCES __INSERT_SCHEMA__.id_scheme(scheme),
+  record_number INT,
   secondary_id VARCHAR[],
   secondary_id_scheme INT[],
   station_name VARCHAR,
@@ -37,5 +37,5 @@ CREATE TABLE __INSERT_SCHEMA__.station_configuration (
   metadata_contact VARCHAR[],
   metadata_contact_role INT[],
   location geography,
-  PRIMARY KEY(primary_id, record_number)
+  PRIMARY KEY(primary_id, primary_id_scheme, record_number)
 );

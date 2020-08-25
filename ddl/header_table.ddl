@@ -44,5 +44,5 @@ CREATE TABLE __INSERT_SCHEMA__.header_table (
   source_record_id VARCHAR,
   location geography,
   PRIMARY KEY(report_id),
-  FOREIGN KEY( primary_station_id, station_record_number) REFERENCES __INSERT_SCHEMA__.station_configuration( primary_id, record_number)
+  FOREIGN KEY(primary_station_id, primary_station_id_scheme, station_record_number) REFERENCES __INSERT_SCHEMA__.station_configuration(primary_id, primary_id_scheme, record_number)
 );
