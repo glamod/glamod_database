@@ -9,34 +9,39 @@ fpath = 'create_indexes.sql'
 outfile = open(fpath, 'w')
 
 
-table_type_indexes = {
-    'observations': ('date_time', 'observed_variable', 'station_name', 'primary_station_id'), 
-    'header': ('report_timestamp',)
-}
+if schema.startswith('full'):
+    # cdmfull
+    table_type_indexes = {
+        'observations_table': ('date_time', 'observed_variable', 'station_name', 'primary_station_id'), 
+        'header_table': ('report_timestamp',)
+    }
+else:
+    # cdmlite
+    table_type_indexes = {
+        'observations': ('date_time', 'observed_variable', 'station_name', 'primary_station_id')
+    }
 
 
-for table_type in ('observations', 'header'):
+for main_table, index_fields in table_type_indexes.items():
 
-  index_fields = table_type_indexes[table_type]
+    print(f'[INFO] Writing indexes for {main_table}')
+    for year in all_years:
 
-  print(f'[INFO] Writing {table_type}_table index SQL...')
-  for year in all_years:
-
-    for station, values in stations.items():
-    
-        if year not in year_ranges[station]: continue
-    
-        for report in values['report']:
+        for station, values in stations.items():
         
-           table_name = '{}.{}_{}_{}_{}'.format( schema, table_type, year, station, report )
-           table_short = '{}_{}_{}_{}'.format( table_type, year, station, report )
-           
-           for idx_field in index_fields: 
-               print('CREATE INDEX {}_{}_idx ON {} ({});'.format(table_short, idx_field, table_name, idx_field), file=outfile) 
+            if year not in year_ranges[station]: continue
+        
+            for report in values['report']:
+            
+                table_short = f'{main_table}_{year}_{station}_{report}'
+                table_name = f'{schema}.{table_short}'
 
-           # gist index is the location index...
-           print('CREATE INDEX {}_{}_gist_idx ON {} USING gist ( {} );'.format(table_short, 'location', table_name, 'location'), file=outfile)
-           print(f'[INFO] Worked on: {table_name}')
+                for idx_field in index_fields: 
+                    print('CREATE INDEX {}_{}_idx ON {} ({});'.format(table_short, idx_field, table_name, idx_field), file=outfile) 
+
+                # gist index is the location index...
+                print('CREATE INDEX {}_{}_gist_idx ON {} USING gist ( {} );'.format(table_short, 'location', table_name, 'location'), file=outfile)
+                print(f'[INFO] Worked on: {table_name}')
 
 outfile.close()
 print(f'[INFO] Wrote: {fpath}')
