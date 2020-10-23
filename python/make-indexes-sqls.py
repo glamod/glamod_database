@@ -10,7 +10,7 @@ outfile = open(fpath, 'w')
 
 
 table_type_indexes = {
-    'observations': ('date_time', 'observed_variable'), 
+    'observations': ('date_time', 'observed_variable', 'station_name', 'primary_station_id'), 
     'header': ('report_timestamp',)
 }
 
