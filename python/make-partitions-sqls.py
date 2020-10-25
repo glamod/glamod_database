@@ -96,7 +96,7 @@ def create_partitions_triggers_header_tables(cdm_type='full'):
     outfile.close()
     outfile2.close()
 
-    outfile = open(f'{cdm_type}-{main_table}_add_trigger.sql','w')
+    outfile = open(f'{cdm_type}-{main_table}_add_triggers.sql','w')
     print(f'CREATE TRIGGER {main_table}_insert_trigger', file = outfile)
     print(f'BEFORE INSERT ON {schema}.{main_table}', file = outfile)
     print(f'FOR EACH ROW EXECUTE PROCEDURE {schema}.{main_table}_insert_trigger();', file = outfile)
@@ -198,7 +198,7 @@ def create_partitions_triggers_observations(cdm_type):
     outfile.close()
     outfile2.close()
 
-    outfile = open(f'{cdm_type}-{main_table}_add_trigger.sql','w')
+    outfile = open(f'{cdm_type}-{main_table}_add_triggers.sql','w')
     print(f'CREATE TRIGGER {main_table}_insert_trigger', file = outfile)
     print(f'BEFORE INSERT ON {schema}.{main_table}', file = outfile)
     print(f'FOR EACH ROW EXECUTE PROCEDURE {schema}.{main_table}_insert_trigger();', file = outfile)

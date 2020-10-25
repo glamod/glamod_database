@@ -1,4 +1,6 @@
-schema = "__INSERT_SCHEMA__"
+import os
+
+schema = os.environ['GLAMOD_DB_SCHEMA']
 
 import datetime
 current_year = datetime.datetime.now().year

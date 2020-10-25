@@ -5,9 +5,6 @@ sys.path.append('.')
 
 from _common import *
 
-fpath = 'create_indexes.sql'
-outfile = open(fpath, 'w')
-
 
 if schema.startswith('full'):
     # cdmfull
@@ -15,11 +12,17 @@ if schema.startswith('full'):
         'observations_table': ('date_time', 'observed_variable', 'station_name', 'primary_station_id'), 
         'header_table': ('report_timestamp',)
     }
+    prefix = 'full'
 else:
     # cdmlite
     table_type_indexes = {
         'observations': ('date_time', 'observed_variable', 'station_name', 'primary_station_id')
     }
+    prefix = 'lite'
+
+
+fpath = f'{prefix}-create_indexes.sql'
+outfile = open(fpath, 'w')
 
 
 for main_table, index_fields in table_type_indexes.items():
