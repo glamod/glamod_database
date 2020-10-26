@@ -9,8 +9,8 @@ from _common import *
 if schema.startswith('full'):
     # cdmfull
     table_type_indexes = {
-        'observations_table': ('date_time', 'observed_variable', 'station_name', 'primary_station_id'), 
-        'header_table': ('report_timestamp',)
+        'observations_table': ('date_time', 'observed_variable'), 
+        'header_table': ('report_timestamp', 'station_name', 'primary_station_id')
     }
     prefix = 'full'
 else:
@@ -40,10 +40,10 @@ for main_table, index_fields in table_type_indexes.items():
                 table_name = f'{schema}.{table_short}'
 
                 for idx_field in index_fields: 
-                    print('CREATE INDEX {}_{}_idx ON {} ({});'.format(table_short, idx_field, table_name, idx_field), file=outfile) 
+                    print(f'CREATE INDEX {table_short}_{idx_field}_idx ON {table_name} ({idx_field});', file=outfile) 
 
                 # gist index is the location index...
-                print('CREATE INDEX {}_{}_gist_idx ON {} USING gist ( {} );'.format(table_short, 'location', table_name, 'location'), file=outfile)
+                print('CREATE INDEX {table_short}_{location}_gist_idx ON {table_name} USING gist ( {location} );', file=outfile)
                 print(f'[INFO] Worked on: {table_name}')
 
 outfile.close()
