@@ -32,7 +32,8 @@ def create_partitions_triggers_header_tables(cdm_type='full'):
                 print(f'create table {table_name}() inherits ( {schema}.{main_table} );', file = outfile )
                 print(f'alter table {table_name} add constraint {table_short}_pk primary key (report_id);', file = outfile )
                 print(f'alter table {table_name} add constraint {table_short}_report check( report_type = {report});', file = outfile)
-                print(f'alter table {table_name} add constraint {table_short}_station check( station_type = {station} );', file = outfile)
+                print(f'alter table {table_name} add constraint {table_short}_station check( station_type = {station_constraint} );', file = outfile)
+    
                 print(f"alter table {table_name} add constraint {table_short}_date check(report_timestamp >= TIMESTAMP WITH TIME ZONE '{tmin}' and report_timestamp < TIMESTAMP WITH TIME ZONE '{tmax}' );", file = outfile)
 
     outfile.close()
@@ -132,7 +133,7 @@ def create_partitions_triggers_observations(cdm_type):
                 print(f'create table {table_name}() inherits ( {schema}.{main_table} );', file = outfile )
                 print(f'alter table {table_name} add constraint {table_short}_pk primary key (observation_id);', file = outfile )
                 print(f'alter table {table_name} add constraint {table_short}_report check( report_type = {report});', file = outfile)
-                print(f'alter table {table_name} add constraint {table_short}_station check( station_type = {station} );', file = outfile)
+                print(f'alter table {table_name} add constraint {table_short}_station check( station_type = {station_constraint} );', file = outfile)
                 print(f"alter table {table_name} add constraint {table_short}_date check(date_time >= TIMESTAMP WITH TIME ZONE '{tmin}' and date_time < TIMESTAMP WITH TIME ZONE '{tmax}' );", file = outfile)
 
     outfile.close()
