@@ -43,7 +43,7 @@ for main_table, index_fields in table_type_indexes.items():
                     print(f'CREATE INDEX {table_short}_{idx_field}_idx ON {table_name} ({idx_field});', file=outfile) 
 
                 # gist index is the location index...
-                print('CREATE INDEX {table_short}_location_gist_idx ON {table_name} USING gist ( location );', file=outfile)
+                print(f'CREATE INDEX {table_short}_location_gist_idx ON {table_name} USING gist ( location );', file=outfile)
                 print(f'[INFO] Worked on: {table_name}')
 
 outfile.close()
