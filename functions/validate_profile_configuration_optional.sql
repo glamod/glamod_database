@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION cdm_v1.validate_source_configuration_optional()
+CREATE OR REPLACE FUNCTION cdm_v1.validate_profile_configuration_optional()
     RETURNS trigger AS
     $BODY$
     DECLARE
@@ -18,7 +18,7 @@ CREATE OR REPLACE FUNCTION cdm_v1.validate_source_configuration_optional()
         ELSE
             RAISE EXCEPTION 'Invalid kind';
         END IF;
-        INSERT INTO cdm_v1.source_configuration_optional VALUES (NEW.*);
+        INSERT INTO cdm_v1.profile_configuration_optional VALUES (NEW.*);
         RETURN NEW;
     EXCEPTION
         WHEN invalid_text_representation THEN --
@@ -40,7 +40,4 @@ LANGUAGE plpgsql VOLATILE
 COST 100;
 
 
-CREATE TRIGGER validate_source_configuration_optional BEFORE INSERT ON
-    cdm_v1.source_configuration_optional
-FOR EACH ROW
-    EXECUTE PROCEDURE cdm_v1.validate_source_configuration_optional();
+

@@ -1,3 +1,7 @@
+/*
+Script creates trigger function and trigger for inseration to station_configuration_optional table
+function checks that new value to add to table
+*/
 CREATE OR REPLACE FUNCTION cdm_v1.validate_station_configuration_optional()
     RETURNS trigger AS
     $BODY$
@@ -40,7 +44,4 @@ LANGUAGE plpgsql VOLATILE
 COST 100;
 
 
-CREATE TRIGGER validate_station_configuration_optional BEFORE INSERT ON
-    cdm_v1.station_configuration_optional
-FOR EACH ROW
-    EXECUTE PROCEDURE cdm_v1.validate_station_configuration_optional();
+

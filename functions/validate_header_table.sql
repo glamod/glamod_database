@@ -20,7 +20,4 @@ $BODY$
 LANGUAGE plpgsql VOLATILE
 COST 100;
 
--- CREATE TRIGGER header_table_insert_check BEFORE INSERT ON
---  cdm_v1.header_table
---FOR EACH ROW
---  EXECUTE PROCEDURE cdm_v1.validate_header_table();
+

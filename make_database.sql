@@ -29,6 +29,7 @@ CREATE SCHEMA cdm_v1;
 \set basedir `pwd`
 \set tabledefs '/pgdata/scripts/glamod_database/ddl/'
 \set functiondefs '/pgdata/scripts/glamod_database/functions/'
+\set triggers '/pgdata/scripts/glamod_database/triggers/'
 \set codetables '/pgdata/scripts/glamod_database/code_tables/'
 \set datatables '/pgdata/scripts/glamod_database/data_tables/'
 
@@ -119,28 +120,42 @@ CREATE SCHEMA cdm_v1;
 \i 'qc_table.ddl'
 \i 'uncertainty_table.ddl'
 -- ----------------------------------------------
--- Add functions
+-- Create partitions for header and observation
+-- tables
+-- ----------------------------------------------
+\i 'create_header_children.sql'
+\i 'create_observations_children.sql'
+-- ----------------------------------------------
+-- Add trigger functions
 -- ----------------------------------------------
 \cd :functiondefs
-\i 'validate_profile_configuration_optional.ddl'
-\i 'validate_sensor_configuration_optional.ddl'
-\i 'validate_source_configuration_optional.ddl'
-\i 'validate_station_configuration_optional.ddl'
-\i 'source_configuration_trigger.ddl'
-\i 'station_configuration_trigger.ddl'
-\i 'header_table_trigger.ddl'
-\i 'observations_table_trigger.ddl'
-\i 'create_header_children.sql'
-\i 'create_header_triggers.sql'
-\i 'create_observations_children.sql'
-\i 'create_observations_triggers.sql'
-\i 'header_add_trigger.sql'
-\i 'observations_add_trigger.sql'
-\i 'validate_header_triggers.sql'
-\i 'validate_observation_triggers.sql'
+\i 'header_insert_trigger.sql'
+\i 'observations_insert_trigger.sql'
+\i 'validate_header_table.sql'
+\i 'validate_observations_table.sql'
+\i 'validate_profile_configuration_optional.sql'
+\i 'validate_sensor_configuration_optional.sql'
+\i 'validate_source_configuration_optional.sql'
+\i 'validate_station_configuration_optional.sql'
+\i 'validate_source_configuration.sql'
+\i 'validate_station_configuration.sql'
 -- ----------------------------------------------
--- Now import initial tables
--- NOTE: order is important!
+-- Now add triggers
+-- ----------------------------------------------
+\cd :triggers
+\i 'header_insert_trigger.sql'
+\i 'observations_insert_trigger.sql'
+\i 'validate_header_table.sql'
+\i 'validate_observations_table.sql'
+\i 'validate_profile_configuration_optional.sql'
+\i 'validate_sensor_configuration_optional.sql'
+\i 'validate_source_configuration_optional.sql'
+\i 'validate_station_configuration_optional.sql'
+\i 'validate_source_configuration.sql'
+\i 'validate_station_configuration.sql'
+-- ----------------------------------------------
+-- Now import initial (code) tables
+-- NOTE: order is important due to relationships!
 -- ----------------------------------------------
 \cd :codetables
 \COPY cdm_v1.application_area FROM 'application_area.dat' WITH CSV HEADER DELIMITER AS E'\t' NULL AS 'NA'
@@ -205,16 +220,4 @@ CREATE SCHEMA cdm_v1;
 \cd :basedir
 -- ---------------------------------------
 -- End of script, database should now be
--- ready for partitioning and creation of 
--- child tables
--- ---------------------------------------
--- Partition on
--- Year (1800 to present)
--- Station type (Land | Sea)
--- Report type
--- Platform type
--- Region (Land)
--- Sub-region (Land)
--- Variable
-
-
+-- ready for partitioning ingestion of data

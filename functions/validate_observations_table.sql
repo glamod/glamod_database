@@ -21,7 +21,4 @@ $BODY$
 LANGUAGE plpgsql VOLATILE
 COST 100;
 
-CREATE TRIGGER observations_table_insert_check BEFORE INSERT ON
-  cdm_v1.observations_table
-FOR EACH ROW
-  EXECUTE PROCEDURE cdm_v1.validate_observations_table();
+
