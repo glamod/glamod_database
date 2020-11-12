@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.meaning_of_time_stamp (
+CREATE TABLE __INSERT_SCHEMA__.meaning_of_time_stamp (
   meaning INT,
   name VARCHAR,
   description VARCHAR,

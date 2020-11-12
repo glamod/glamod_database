@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.product_level (
+CREATE TABLE __INSERT_SCHEMA__.product_level (
   level INT ,
   description VARCHAR,
   PRIMARY KEY(level)

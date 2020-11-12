@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.kind (
+CREATE TABLE __INSERT_SCHEMA__.kind (
   kind INT,
   description VARCHAR,
   PRIMARY KEY(kind)

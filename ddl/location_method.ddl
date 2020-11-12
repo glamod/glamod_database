@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.location_method (
+CREATE TABLE __INSERT_SCHEMA__.location_method (
   method INT,
   description VARCHAR,
   PRIMARY KEY(method)

@@ -1,5 +1,5 @@
-CREATE TABLE cdm_v1.sensor_configuration_codes (
-  field_id VARCHAR  REFERENCES cdm_v1.sensor_configuration_fields(field_id),
+CREATE TABLE __INSERT_SCHEMA__.sensor_configuration_codes (
+  field_id VARCHAR  REFERENCES __INSERT_SCHEMA__.sensor_configuration_fields(field_id),
   field_name VARCHAR,
   parameter VARCHAR,
   code_value INT ,

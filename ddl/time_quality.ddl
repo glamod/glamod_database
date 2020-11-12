@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.time_quality (
+CREATE TABLE __INSERT_SCHEMA__.time_quality (
   quality INT,
   description VARCHAR,
   PRIMARY KEY(quality)

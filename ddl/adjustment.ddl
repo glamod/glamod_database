@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.adjustment (
+CREATE TABLE __INSERT_SCHEMA__.adjustment (
   adjustment_id VARCHAR ,
   observation_id VARCHAR,
   value NUMERIC,

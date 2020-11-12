@@ -1,8 +1,8 @@
-CREATE TABLE cdm_v1.contact (
+CREATE TABLE __INSERT_SCHEMA__.contact (
   contact_id VARCHAR ,
   title VARCHAR,
   name VARCHAR,
-  organisation VARCHAR  REFERENCES cdm_v1.organisation(organisation_id),
+  organisation VARCHAR  REFERENCES __INSERT_SCHEMA__.organisation(organisation_id),
   telephone VARCHAR,
   email VARCHAR,
   url VARCHAR,

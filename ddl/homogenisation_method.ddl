@@ -1,4 +1,4 @@
-CREATE TABLE cdm_v1.homogenisation_method (
+CREATE TABLE __INSERT_SCHEMA__.homogenisation_method (
   method INT ,
   description VARCHAR,
   reference VARCHAR,

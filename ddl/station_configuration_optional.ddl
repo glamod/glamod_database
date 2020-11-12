@@ -1,9 +1,9 @@
-CREATE TABLE cdm_v1.station_configuration_optional (
+CREATE TABLE __INSERT_SCHEMA__.station_configuration_optional (
   station_primary_id VARCHAR,
   record_number INT,
-  kind INT REFERENCES cdm_v1.kind(kind),
-  field VARCHAR REFERENCES cdm_v1.station_configuration_fields(field_id),
+  kind INT REFERENCES __INSERT_SCHEMA__.kind(kind),
+  field VARCHAR REFERENCES __INSERT_SCHEMA__.station_configuration_fields(field_id),
   value VARCHAR,
   comments VARCHAR,
-  FOREIGN KEY( station_primary_id, record_number) REFERENCES cdm_v1.station_configuration( primary_id, record_number)
+  FOREIGN KEY( station_primary_id, record_number) REFERENCES __INSERT_SCHEMA__.station_configuration( primary_id, record_number)
 );

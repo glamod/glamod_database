@@ -1,4 +1,4 @@
 CREATE TRIGGER station_configuration_insert_check BEFORE INSERT ON
-  cdm_v1.station_configuration
+  __INSERT_SCHEMA__.station_configuration
 FOR EACH ROW
-  EXECUTE PROCEDURE cdm_v1.validate_station_configuration();
+  EXECUTE PROCEDURE __INSERT_SCHEMA__.validate_station_configuration();
