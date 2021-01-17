@@ -20,8 +20,8 @@ inv_stations = {
 start_year = 1755
 
 year_ranges = {
-    "land": range(start_year, current_year + 1),
-    "marine": range(1946, current_year + 1)
+    "land": range(1755, current_year + 1),
+    "marine": range(1800, current_year + 1)
 }
 
 all_years = range(start_year, current_year + 1)
