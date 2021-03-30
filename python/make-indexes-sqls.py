@@ -16,7 +16,7 @@ if schema.startswith('full'):
 else:
     # cdmlite
     table_type_indexes = {
-        'observations': ('date_time', 'observed_variable', 'station_name', 'primary_station_id')
+        'observations': ('date_time', 'observed_variable', 'station_name', 'primary_station_id', 'date')
     }
     prefix = 'lite'
 
