@@ -15,8 +15,7 @@ sys.path.append('.')
 from _common import *
 
 
-SQL = f"""
-CREATE TABLE {schema}.observations (
+SQL = f"""CREATE TABLE {schema}.observations (
 
     observation_id character varying NOT NULL PRIMARY KEY,
     data_policy_licence integer,
@@ -40,8 +39,7 @@ CREATE TABLE {schema}.observations (
 
 ){tablespace_sql};
 
-ALTER TABLE {schema}.observations ADD COLUMN location geography(Point, 4326);
-"""
+ALTER TABLE {schema}.observations ADD COLUMN location geography(Point, 4326);"""
 
 
 outfile = open('lite-create-table.sql','w')
