@@ -29,7 +29,7 @@ def create_partitions_triggers_header_tables(cdm_type='full'):
 
                 station_constraint = inv_stations[station]
 
-                print(f'create table {table_name}() inherits ( {schema}.{main_table} );', file = outfile )
+                print(f'CREATE TABLE {table_name}() inherits ( {schema}.{main_table} ){tablespace_sql};', file = outfile )
                 print(f'alter table {table_name} add constraint {table_short}_pk primary key (report_id);', file = outfile )
                 print(f'alter table {table_name} add constraint {table_short}_report check( report_type = {report} );', file = outfile)
                 print(f'alter table {table_name} add constraint {table_short}_station check( station_type = {station_constraint} );', file = outfile)
@@ -130,7 +130,7 @@ def create_partitions_triggers_observations(cdm_type):
 
                 station_constraint = inv_stations[station]
 
-                print(f'create table {table_name}() inherits ( {schema}.{main_table} );', file = outfile )
+                print(f'CREATE TABLE {table_name}() inherits ( {schema}.{main_table} ){tablespace_sql};', file = outfile )
                 print(f'alter table {table_name} add constraint {table_short}_pk primary key (observation_id);', file = outfile )
                 print(f'alter table {table_name} add constraint {table_short}_report check( report_type = {report});', file = outfile)
                 print(f'alter table {table_name} add constraint {table_short}_station check( station_type = {station_constraint} );', file = outfile)

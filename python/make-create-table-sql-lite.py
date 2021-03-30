@@ -38,7 +38,7 @@ CREATE TABLE {schema}.observations (
     quality_flag integer,
     source_id character varying
 
-);
+){tablespace_sql};
 
 ALTER TABLE {schema}.observations ADD COLUMN location geography(Point, 4326);
 """
