@@ -5,7 +5,9 @@ schema = os.environ['GLAMOD_DB_SCHEMA']
 # Define tablespace code for each schema
 tablespace_sql = {
     'lite_2_0': '',
-    'lite_3_0': ' TABLESPACE lite_3_0'
+    'lite_3_0': ' TABLESPACE rel_3_0'
+    'full_2_0': '',
+    'full_3_0': ' TABLESPACE rel_3_0'
 }[schema]
 
 import datetime
