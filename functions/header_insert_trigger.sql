@@ -2,6 +2,1014 @@
 CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
     RETURNS TRIGGER AS $$
     BEGIN
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1752-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1753-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1752_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1752_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1752_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1752_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1753-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1754-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1753_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1753_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1753_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1753_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1754-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1755-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1754_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1754_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1754_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1754_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1755-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1756-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1755_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1755_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1755_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1755_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1756-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1757-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1756_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1756_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1756_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1756_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1757-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1758-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1757_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1757_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1757_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1757_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1758-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1759-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1758_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1758_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1758_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1758_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1759-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1760-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1759_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1759_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1759_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1759_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1760-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1761-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1760_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1760_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1760_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1760_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1761-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1762-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1761_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1761_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1761_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1761_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1762-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1763-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1762_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1762_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1762_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1762_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1763-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1764-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1763_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1763_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1763_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1763_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1764-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1765-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1764_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1764_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1764_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1764_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1765-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1766-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1765_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1765_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1765_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1765_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1766-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1767-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1766_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1766_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1766_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1766_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1767-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1768-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1767_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1767_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1767_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1767_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1768-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1769-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1768_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1768_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1768_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1768_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1769-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1770-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1769_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1769_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1769_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1769_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1770-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1771-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1770_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1770_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1770_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1770_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1771-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1772-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1771_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1771_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1771_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1771_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1772-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1773-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1772_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1772_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1772_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1772_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1773-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1774-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1773_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1773_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1773_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1773_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1774-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1775-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1774_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1774_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1774_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1774_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1775-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1776-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1775_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1775_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1775_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1775_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1776-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1777-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1776_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1776_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1776_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1776_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1777-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1778-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1777_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1777_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1777_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1777_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1778-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1779-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1778_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1778_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1778_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1778_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1779-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1780-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1779_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1779_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1779_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1779_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1780-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1781-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1780_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1780_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1780_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1780_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1781-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1782-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1781_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1781_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1781_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1781_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1782-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1783-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1782_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1782_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1782_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1782_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1783-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1784-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1783_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1783_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1783_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1783_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1784-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1785-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1784_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1784_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1784_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1784_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1785-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1786-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1785_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1785_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1785_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1785_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1786-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1787-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1786_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1786_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1786_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1786_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1787-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1788-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1787_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1787_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1787_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1787_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1788-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1789-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1788_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1788_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1788_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1788_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1789-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1790-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1789_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1789_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1789_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1789_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1790-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1791-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1790_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1790_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1790_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1790_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1791-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1792-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1791_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1791_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1791_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1791_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1792-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1793-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1792_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1792_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1792_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1792_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1793-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1794-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1793_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1793_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1793_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1793_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1794-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1795-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1794_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1794_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1794_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1794_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1795-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1796-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1795_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1795_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1795_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1795_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1796-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1797-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1796_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1796_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1796_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1796_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1797-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1798-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1797_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1797_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1797_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1797_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1798-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1799-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1798_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1798_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1798_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1798_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1799-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1800-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1799_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1799_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1799_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_1799_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
         IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '1800-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '1801-01-01 00:00:0.0+0' THEN
             IF NEW.station_type = 1 THEN
                 IF NEW.report_type = 0 THEN
@@ -4594,6 +5602,69 @@ CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()
             ELSIF NEW.station_type = 2 THEN
                 IF NEW.report_type = 0 THEN
                     INSERT INTO __INSERT_SCHEMA__.header_2018_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '2019-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '2020-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2019_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2019_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2019_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2019_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '2020-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '2021-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2020_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2020_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2020_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2020_marine_0 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSE
+                RAISE EXCEPTION 'Invalid station type in header_insert_trigger';
+            END IF;
+        END IF;
+        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '2021-01-01 00:00:0.0+0' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '2022-01-01 00:00:0.0+0' THEN
+            IF NEW.station_type = 1 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2021_land_0 VALUES(NEW.*);
+                ELSIF NEW.report_type = 1 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2021_land_1 VALUES(NEW.*);
+                ELSIF NEW.report_type = 2 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2021_land_2 VALUES(NEW.*);
+                ELSE
+                    RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
+                END IF;
+            ELSIF NEW.station_type = 2 THEN
+                IF NEW.report_type = 0 THEN
+                    INSERT INTO __INSERT_SCHEMA__.header_2021_marine_0 VALUES(NEW.*);
                 ELSE
                     RAISE EXCEPTION 'Invalid report type in header_insert_trigger';
                 END IF;

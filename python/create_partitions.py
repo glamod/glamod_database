@@ -18,7 +18,7 @@ inv_stations = {
 outfile = open('create_header_children.sql', 'w')
 print('\connect c3s311a', file = outfile)
 # generate child tables for header
-for year in range( 1800, 2019, 1):
+for year in range( 1753, 2022, 1):
     tmin = '{}-01-01 00:00:0.0+0'.format(year)
     tmax = '{}-01-01 00:00:0.0+0'.format(year + 1)
     for station, values in stations.items():
@@ -44,7 +44,7 @@ print( '' )
 print( 'CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.header_insert_trigger()', file = outfile)
 print( '    RETURNS TRIGGER AS $$', file = outfile)
 print( '    BEGIN', file = outfile)
-for year in range( 1800, 2019, 1):
+for year in range( 1753, 2022, 1):
     tmin = '{}-01-01 00:00:0.0+0'.format(year)
     tmax = '{}-01-01 00:00:0.0+0'.format(year + 1)
     print( "        IF NEW.report_timestamp >= TIMESTAMP WITH TIME ZONE '{}' AND NEW.report_timestamp < TIMESTAMP WITH TIME ZONE '{}' THEN".format( tmin, tmax), file = outfile)
@@ -97,7 +97,7 @@ outfile.close()
 outfile = open('create_observations_children.sql', 'w')
 print('\connect c3s311a', file = outfile)
 # generate child tables for header
-for year in range( 1800, 2019, 1):
+for year in range( 1753, 2022, 1):
     tmin = '{}-01-01 00:00:0.0+0'.format(year)
     tmax = '{}-01-01 00:00:0.0+0'.format(year + 1)
     for station, values in stations.items():
@@ -122,7 +122,7 @@ print( '' )
 print( 'CREATE OR REPLACE FUNCTION __INSERT_SCHEMA__.observations_insert_trigger()', file = outfile)
 print( '    RETURNS TRIGGER AS $$', file = outfile)
 print( '    BEGIN', file = outfile)
-for year in range( 1800, 2019, 1):
+for year in range( 1753, 2022, 1):
     tmin = '{}-01-01 00:00:0.0+0'.format(year)
     tmax = '{}-01-01 00:00:0.0+0'.format(year + 1)
     print( "        IF NEW.date_time >= TIMESTAMP WITH TIME ZONE '{}' AND NEW.date_time < TIMESTAMP WITH TIME ZONE '{}' THEN".format( tmin, tmax), file = outfile)
